@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // Voyager::useModel('Employee', \App\Employee::class);
     }
 
     /**
