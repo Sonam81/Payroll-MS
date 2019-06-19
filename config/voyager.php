@@ -150,6 +150,8 @@ return [
         ],
 
         'widgets' => [
+            'TCG\\Voyager\\Widgets\\UserDimmer',
+            'App\\Widgets\\Employees',
 
         ],
 
@@ -187,7 +189,7 @@ return [
     |
     */
 
-    'primary_color' => '#22A7F0',
+    'primary_color' => '#0041C2',
 
     'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
 
