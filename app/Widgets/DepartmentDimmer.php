@@ -2,12 +2,10 @@
 
 namespace App\Widgets;
 
-  use App\Employee;
-
 use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
 
-class Employees extends BaseDimmer
+class DepartmentDimmer extends BaseDimmer
 {
     /**
      * The configuration array.
@@ -22,18 +20,17 @@ class Employees extends BaseDimmer
      */
     public function run()
     {
-        $count = \App\Employee::count();
-       // $string = 'Employees';
-        $str = ($count > 1) ? 'Employees':'Employee';
+        $count = \App\Department::count();
+        $str = ($count > 1) ? 'Departments':'Department';
         return view('voyager::dimmer', array_merge($this->config, [
-            'icon'   => 'voyager-people',
+            'icon'   => 'voyager-categories',
             'title'  => "{$count} {$str}",
-            'text'   => "You have {$count} registered {$str}.",
+            'text'   => "You have {$count} {$str}.",
             'button' => [
-                'text' => "{$str}",
-                'link' => route('voyager.employees.index'),
+                'text' =>"{$str}",
+                'link' => route('voyager.departments.index'),
             ],
-            'image' => voyager_asset('images/widget-backgrounds/employee.jpg'),
+            'image' => voyager_asset('images/widget-backgrounds/02.jpg'),
         ]));
     }
 
