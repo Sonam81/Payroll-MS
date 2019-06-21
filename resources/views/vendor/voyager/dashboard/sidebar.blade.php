@@ -14,7 +14,10 @@
                     <div class="title">{{Voyager::setting('admin.title', 'VOYAGER')}}</div>
                 </a>
             </div><!-- .navbar-header -->
-
+            <!-- Search form -->
+            <div class="md-form active-pink-2 mb-3">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </div>
             <!-- <div class="panel widget center bgimage"
                  style="background-image:url({{ Voyager::image( Voyager::setting('admin.bg_image'), voyager_asset('images/bg.jpg') ) }}); background-size: cover; background-position: 0px;">
                 <div class="dimmer"></div>
