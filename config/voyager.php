@@ -33,7 +33,7 @@ return [
 
     'controllers' => [
         'namespace' => 'TCG\\Voyager\\Http\\Controllers',
-       // 'namespace' => 'App\\Http\\Controllers\\Voyager',
+        // 'namespace' => 'App\\Http\\Controllers\\Voyager',
     ],
 
     /*
@@ -154,7 +154,6 @@ return [
             //'TCG\\Voyager\\Widgets\\PostDimmer',
             //'TCG\\Voyager\\Widgets\\PageDimmer',
             'App\\Widgets\\Employees',
-            'App\\Widgets\\ApplicationDimmer',
             'App\\Widgets\\DepartmentDimmer',
 
         ],
